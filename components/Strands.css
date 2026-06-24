@@ -1,0 +1,59 @@
+.strands-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.strands-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section-strands {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.section-strands--hero {
+  opacity: 1;
+}
+
+.section-strands--subtle {
+  opacity: 0.32;
+  mix-blend-mode: screen;
+}
+
+.section-strands--accent {
+  opacity: 0.45;
+  mix-blend-mode: screen;
+}
+
+.section-strands__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 50%,
+    transparent 0%,
+    var(--bg, #0f0d0d) 100%
+  );
+}
+
+.section.has-strands {
+  position: relative;
+  overflow: hidden;
+}
+
+.section.has-strands > .container,
+.section.has-strands > .about__watermark,
+.section.has-strands > .manifesto__watermark,
+.section.has-strands > .section-cut {
+  position: relative;
+  z-index: 2;
+}

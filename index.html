@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components/Strands.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,6 +28,10 @@
   </script>
 </head>
 <body>
+  <div class="site-strands-wrap" aria-hidden="true">
+    <div data-strands="subtle" id="site-strands"></div>
+    <div class="site-strands-vignette"></div>
+  </div>
   <div class="grain" aria-hidden="true"></div>
   <div class="cursor" id="cursor" aria-hidden="true">
     <span class="cursor__dot"></span>
@@ -51,12 +56,13 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__bg" aria-hidden="true">
-        <div class="hero__gradient"></div>
+        <div class="section-strands section-strands--hero" data-strands="hero" id="hero-strands"></div>
+        <div class="hero__strands-vignette"></div>
+        <div class="hero__gradient hero__gradient--dim"></div>
         <div class="hero__noise"></div>
-        <div class="hero__particles" id="particles"></div>
         <div class="hero__mouse-layer" id="mouseLayer"></div>
       </div>
-      <div class="hero__mesh" aria-hidden="true"></div>
+      <div class="hero__mesh hero__mesh--dim" aria-hidden="true"></div>
       <div class="hero__lines" aria-hidden="true"></div>
       <div class="container hero__container">
         <div class="hero__layout">
@@ -380,7 +386,9 @@
     </section>
 
     <!-- MANIFESTO QUOTE -->
-    <section id="manifesto" class="section manifesto manifesto--quote" aria-labelledby="manifesto-title">
+    <section id="manifesto" class="section manifesto manifesto--quote has-strands" aria-labelledby="manifesto-title">
+      <div class="section-strands section-strands--accent" data-strands="glass"></div>
+      <div class="section-strands__vignette"></div>
       <div class="section-cut section-cut--manifesto" aria-hidden="true"></div>
       <p class="manifesto__watermark" aria-hidden="true">ЖИВОЙ</p>
       <div class="container manifesto__container manifesto__container--quote">
@@ -397,7 +405,9 @@
     </section>
 
     <!-- CONTACT / CTA -->
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <section id="contact" class="section contact has-strands" aria-labelledby="contact-title">
+      <div class="section-strands section-strands--accent" data-strands="accent"></div>
+      <div class="section-strands__vignette"></div>
       <div class="container contact__layout">
         <div class="contact__intro">
           <div class="section__label reveal" data-reveal="left">08 — Контакт</div>
@@ -446,6 +456,7 @@
     </div>
   </footer>
 
+  <script type="module" src="strands-init.js"></script>
   <script src="script.js" defer></script>
 </body>
 </html>

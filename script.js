@@ -70,22 +70,6 @@
     });
   }
 
-  var particlesContainer = document.getElementById("particles");
-  if (particlesContainer && !prefersReducedMotion) {
-    var count = window.matchMedia("(max-width: 768px)").matches ? 18 : 35;
-    for (var i = 0; i < count; i++) {
-      var p = document.createElement("span");
-      p.className = "particle";
-      p.style.left = Math.random() * 100 + "%";
-      p.style.top = Math.random() * 100 + "%";
-      p.style.setProperty("--dx", (Math.random() - 0.5) * 80 + "px");
-      p.style.setProperty("--dy", (Math.random() - 0.5) * 80 + "px");
-      p.style.setProperty("--float-duration", 12 + Math.random() * 18 + "s");
-      p.style.setProperty("--float-delay", Math.random() * 6 + "s");
-      particlesContainer.appendChild(p);
-    }
-  }
-
   var reveals = document.querySelectorAll(".reveal");
   if (reveals.length && "IntersectionObserver" in window) {
     var observer = new IntersectionObserver(
