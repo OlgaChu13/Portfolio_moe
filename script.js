@@ -41,7 +41,7 @@
     animateCursor();
 
     var hoverTargets = document.querySelectorAll(
-      "a, button, .btn, .work-item, .tech__item, .capability, .audience__item, [data-cursor='hover']"
+      "a, button, .btn, .work-item, .tech__item, .capability, .audience__item, .testimonial, [data-cursor='hover']"
     );
 
     hoverTargets.forEach(function (el) {

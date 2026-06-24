@@ -1427,70 +1427,100 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   TESTIMONIALS — DecayCard grid
+   TESTIMONIALS
    ============================================ */
 .testimonials {
   overflow: hidden;
   position: relative;
+  background: var(--bg-surface);
+  border-block: 1px solid var(--divider);
 }
 
 .testimonials::before {
   content: "";
   position: absolute;
-  top: 20%;
-  right: -10%;
-  width: 40%;
-  height: 60%;
-  background: radial-gradient(ellipse, rgba(200, 121, 65, 0.08) 0%, transparent 70%);
+  top: 10%;
+  right: -8%;
+  width: 36%;
+  height: 55%;
+  background: radial-gradient(ellipse, rgba(249, 115, 22, 0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
 .testimonials__lead {
-  font-size: var(--text-sm);
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  letter-spacing: var(--tracking-wide);
-  max-width: 420px;
-  margin-top: var(--space-4);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin-top: var(--space-3);
+  line-height: var(--leading-relaxed);
 }
 
-.testimonials__track {
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.testimonial {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: var(--space-8);
-  padding-block: var(--space-8);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding: var(--space-8);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-inset);
+  transition:
+    transform var(--duration-normal) var(--ease-out-expo),
+    border-color var(--duration-fast),
+    box-shadow var(--duration-slow);
 }
 
-.testimonials__track::-webkit-scrollbar {
-  display: none;
+.testimonial:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-soft), 0 0 36px rgba(249, 115, 22, 0.06);
 }
 
-.testimonials__item {
-  scroll-snap-align: center;
-  flex-shrink: 0;
-  transition: transform var(--duration-normal) var(--ease-out-expo);
+.testimonial--featured {
+  background: linear-gradient(160deg, var(--bg-surface-2), var(--bg));
+  border-color: rgba(249, 115, 22, 0.22);
 }
 
-.testimonials__item--raised {
-  margin-bottom: var(--space-12);
+.testimonial__quote {
+  margin: 0;
 }
 
-.testimonials__item:hover {
-  transform: translateY(-6px);
+.testimonial__quote p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
 }
 
-.testimonials__item:nth-child(1) { transform: rotate(-2deg); }
-.testimonials__item:nth-child(2) { transform: rotate(1deg); }
-.testimonials__item:nth-child(3) { transform: rotate(-1.5deg); }
+.testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--divider);
+}
 
-.testimonials__item:nth-child(1):hover { transform: rotate(-2deg) translateY(-6px); }
-.testimonials__item:nth-child(2):hover { transform: rotate(1deg) translateY(-6px); }
-.testimonials__item:nth-child(3):hover { transform: rotate(-1.5deg) translateY(-6px); }
+.testimonial__name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  font-style: normal;
+  color: var(--text-primary);
+}
+
+.testimonial__role {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-muted);
+}
 
 /* ============================================
    TECHNOLOGIES
@@ -1869,6 +1899,7 @@ ul { list-style: none; }
   }
 
   .capabilities__grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials__grid { grid-template-columns: 1fr; }
   .philosophy__layout { grid-template-columns: 1fr; gap: var(--space-12); }
   .philosophy__visual { max-width: 280px; }
   .contact__layout { grid-template-columns: 1fr; }
