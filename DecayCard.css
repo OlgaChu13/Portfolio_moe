@@ -1,0 +1,70 @@
+/* DecayCard — React Bits port */
+.decay-card {
+  position: relative;
+  flex-shrink: 0;
+  border: 1px solid var(--border, rgba(237, 232, 224, 0.1));
+  border-radius: var(--radius-md, 10px);
+  box-shadow: var(--shadow-soft, 0 4px 32px rgba(0, 0, 0, 0.35));
+}
+
+.decay-card__svg-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  border-radius: var(--radius-md, 10px);
+  overflow: hidden;
+}
+
+.decay-card__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.decay-card__text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.4em;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(14, 13, 12, 0.92) 0%,
+    rgba(14, 13, 12, 0.45) 45%,
+    transparent 100%
+  );
+}
+
+.decay-card__quote {
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--text-primary, #ede8e0);
+  margin-bottom: 0.75em;
+}
+
+.decay-card__author {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-hover, #dba060);
+  font-style: normal;
+}
+
+.decay-card__role {
+  display: block;
+  margin-top: 0.35em;
+  color: var(--text-muted, rgba(237, 232, 224, 0.38));
+  font-size: 0.6rem;
+}
+
+.decay-card--static .decay-card__svg-wrap {
+  will-change: auto;
+}
