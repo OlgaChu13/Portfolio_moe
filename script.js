@@ -41,7 +41,7 @@
     animateCursor();
 
     var hoverTargets = document.querySelectorAll(
-      "a, button, .btn, .card, .work-item, .tech__item, .capability, .decay-card, [data-cursor='hover']"
+      "a, button, .btn, .work-item, .tech__item, .capability, .audience__item, [data-cursor='hover']"
     );
 
     hoverTargets.forEach(function (el) {
@@ -142,18 +142,4 @@
       }, 2500);
     });
   }
-
-  function initDecayCards() {
-    if (typeof gsap === "undefined" || typeof DecayCard === "undefined") return;
-
-    if (prefersReducedMotion || isTouch) {
-      document.querySelectorAll(".decay-card-mount").forEach(function (el) {
-        el.dataset.disabled = "true";
-      });
-    }
-
-    DecayCard.initAll(".decay-card-mount");
-  }
-
-  initDecayCards();
 })();

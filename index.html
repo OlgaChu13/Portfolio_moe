@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Портфолио разработчика — цифровые продукты, интерфейсы и архитектура с акцентом на глубину и деталь.">
+  <meta name="description" content="Vibe Coder — сайты, интерфейсы и digital-проекты, которые выглядят как вайб, а работают как система.">
   <meta name="theme-color" content="#0e0d0c">
-  <meta property="og:title" content="Игорь — Digital Craft">
-  <meta property="og:description" content="Создаю цифровые продукты с физическим ощущением интерфейса.">
+  <meta property="og:title" content="Игорь — Vibe Coder Portfolio">
+  <meta property="og:description" content="Собираю ощущение, стиль, логику и подачу — от лендингов до AI-first продуктов.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <title>Игорь — Digital Craft</title>
+  <title>Игорь — Vibe Coder Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="DecayCard.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,9 +39,9 @@
     <div class="container site-header__inner">
       <a href="#" class="logo" aria-label="На главную">IC</a>
       <nav class="nav" aria-label="Основная навигация">
-        <a href="#manifesto" class="nav__link">Манифест</a>
-        <a href="#work" class="nav__link">Работы</a>
-        <a href="#testimonials" class="nav__link">Отзывы</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#work" class="nav__link">Проекты</a>
+        <a href="#approach" class="nav__link">Подход</a>
         <a href="#contact" class="nav__link nav__link--cta">Связаться</a>
       </nav>
     </div>
@@ -62,18 +61,18 @@
       <div class="container hero__container">
         <div class="hero__layout">
           <div class="hero__content">
-            <p class="hero__eyebrow reveal" data-reveal="up">Digital Craft · 2026</p>
+            <p class="hero__eyebrow reveal" data-reveal="up">Vibe Coder / Portfolio / Web &amp; AI Experiences</p>
             <h1 id="hero-title" class="hero__title reveal" data-reveal="up" data-delay="1">
-              Интерфейсы,<br>
-              <em class="hero__title-accent">которые ощущаются</em>
+              Я делаю сайты, интерфейсы и digital-проекты, которые выглядят как<br>
+              <em class="hero__title-accent">вайб, а работают как система</em>
             </h1>
             <p class="hero__subtitle reveal" data-reveal="up" data-delay="2">
-              Проектирую и разрабатываю цифровые продукты — от концепции до продакшена.
-              Каждый пиксель с намерением.
+              Не просто «что-то сверстать», а собрать ощущение, стиль, логику и подачу так,
+              чтобы проект хотелось открыть, листать и запомнить.
             </p>
             <div class="hero__cta reveal" data-reveal="up" data-delay="3">
-              <a href="#work" class="btn btn--primary" data-cursor="hover">Смотреть работы</a>
-              <a href="#contact" class="btn btn--ghost" data-cursor="hover">Обсудить проект</a>
+              <a href="#work" class="btn btn--primary" data-cursor="hover">Посмотреть проекты</a>
+              <a href="#contact" class="btn btn--ghost" data-cursor="hover">Обсудить задачу</a>
             </div>
           </div>
           <aside class="hero__aside reveal" data-reveal="mask" data-delay="2" aria-hidden="true">
@@ -88,128 +87,37 @@
       </div>
     </section>
 
-    <!-- MANIFESTO -->
-    <section id="manifesto" class="section manifesto" aria-labelledby="manifesto-title">
-      <div class="section-cut section-cut--manifesto" aria-hidden="true"></div>
-      <p class="manifesto__watermark" aria-hidden="true">РЕШЕНИЕ</p>
-      <div class="container manifesto__container">
-        <div class="section__label reveal" data-reveal="left">01 — Манифест</div>
-        <h2 id="manifesto-title" class="manifesto__title reveal" data-reveal="left" data-delay="1">
-          <span class="manifesto__word">Дизайн</span>
-          <span class="manifesto__word">— это</span>
-          <span class="manifesto__word manifesto__word--accent">решение,</span>
-          <span class="manifesto__word">а не</span>
-          <span class="manifesto__word">украшение.</span>
+    <!-- ABOUT -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="section-cut section-cut--about" aria-hidden="true"></div>
+      <p class="about__watermark" aria-hidden="true">ВПЕЧАТЛЕНИЕ</p>
+      <div class="container about__container">
+        <div class="section__label reveal" data-reveal="left">01 — Обо мне</div>
+        <h2 id="about-title" class="about__title reveal" data-reveal="left" data-delay="1">
+          Я не просто пишу код — <span class="about__title-accent">я собираю впечатление</span>
         </h2>
-        <p class="manifesto__body reveal" data-reveal="left" data-delay="2">
-          Я не добавляю анимации ради анимаций. Каждое движение несёт смысл —
-          направляет взгляд, подтверждает действие, создаёт ощущение материальности.
-          Интерфейс должен отвечать, как хороший инструмент в руке.
-        </p>
-      </div>
-    </section>
-
-    <!-- FEATURED PRODUCTS -->
-    <section id="products" class="section featured" aria-labelledby="featured-title">
-      <div class="container">
-        <header class="section__header">
-          <div class="section__label reveal" data-reveal="up">02 — Продукты</div>
-          <h2 id="featured-title" class="section__title reveal" data-reveal="up" data-delay="1">Избранные продукты</h2>
-        </header>
-        <div class="featured__grid">
-          <article class="card card--featured card--lead reveal" data-reveal="scale" data-delay="1">
-            <div class="card__glow" aria-hidden="true"></div>
-            <div class="card__inner">
-              <span class="badge badge--accent">Флагман</span>
-              <h3 class="card__title">Nebula OS</h3>
-              <p class="card__desc">Операционная среда для креативных команд. Модульная архитектура, real-time коллаборация.</p>
-              <div class="card__meta">
-                <span class="tag">React</span>
-                <span class="tag">WebGL</span>
-                <span class="tag">Rust</span>
-              </div>
-              <a href="#" class="card__link" aria-label="Подробнее о Nebula OS">
-                <span>Исследовать</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-          <article class="card card--featured reveal" data-reveal="scale" data-delay="2">
-            <div class="card__glow" aria-hidden="true"></div>
-            <div class="card__inner">
-              <span class="badge">Новый</span>
-              <h3 class="card__title">Pulse Analytics</h3>
-              <p class="card__desc">Дашборд метрик с предиктивными моделями. Визуализация данных без шума.</p>
-              <div class="card__meta">
-                <span class="tag">D3.js</span>
-                <span class="tag">TypeScript</span>
-              </div>
-              <a href="#" class="card__link" aria-label="Подробнее о Pulse Analytics">
-                <span>Исследовать</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-          <article class="card card--featured reveal" data-reveal="scale" data-delay="3">
-            <div class="card__glow" aria-hidden="true"></div>
-            <div class="card__inner">
-              <span class="badge badge--muted">Open Source</span>
-              <h3 class="card__title">Kinetic UI</h3>
-              <p class="card__desc">Библиотека motion-компонентов с физическими кривыми и accessibility из коробки.</p>
-              <div class="card__meta">
-                <span class="tag">Motion</span>
-                <span class="tag">A11y</span>
-              </div>
-              <a href="#" class="card__link" aria-label="Подробнее о Kinetic UI">
-                <span>Исследовать</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PHILOSOPHY -->
-    <section id="philosophy" class="section philosophy" aria-labelledby="philosophy-title">
-      <div class="container philosophy__layout">
-        <div class="philosophy__visual reveal" data-reveal="mask" aria-hidden="true">
-          <div class="philosophy__orb philosophy__orb--1"></div>
-          <div class="philosophy__orb philosophy__orb--2"></div>
-          <div class="philosophy__grid-lines"></div>
-        </div>
-        <div class="philosophy__content">
-          <div class="section__label reveal" data-reveal="right">03 — Философия</div>
-          <h2 id="philosophy-title" class="section__title reveal" data-reveal="right" data-delay="1">Три принципа</h2>
-          <ul class="philosophy__list">
-            <li class="philosophy__item reveal" data-reveal="right" data-delay="2">
-              <span class="philosophy__num">01</span>
-              <div>
-                <h3 class="philosophy__item-title">Глубина вместо плоскости</h3>
-                <p>Каждый элемент существует в пространстве — тени, слои, перспектива создают иерархию без крика.</p>
-              </div>
-            </li>
-            <li class="philosophy__item reveal" data-reveal="right" data-delay="3">
-              <span class="philosophy__num">02</span>
-              <div>
-                <h3 class="philosophy__item-title">Движение с массой</h3>
-                <p>Анимации подчиняются физике: инерция, отскок, сопротивление. Ничего не «всплывает из ниоткуда».</p>
-              </div>
-            </li>
-            <li class="philosophy__item reveal" data-reveal="right" data-delay="4">
-              <span class="philosophy__num">03</span>
-              <div>
-                <h3 class="philosophy__item-title">Тишина между акцентами</h3>
-                <p>Много воздуха. Пространство — не пустота, а инструмент фокусировки внимания.</p>
-              </div>
-            </li>
-          </ul>
+        <div class="about__grid">
+          <p class="about__body reveal" data-reveal="left" data-delay="2">
+            Я работаю на стыке кода, визуала, UX и AI-инструментов.
+            Для меня сайт — это не набор блоков. Это ощущение от проекта,
+            ритм, подача, структура и то, как человек чувствует себя внутри интерфейса.
+          </p>
+          <div class="about__services reveal" data-reveal="left" data-delay="3">
+            <p class="about__services-label">Я делаю:</p>
+            <ul class="about__list">
+              <li>лендинги</li>
+              <li>портфолио</li>
+              <li>промо-страницы</li>
+              <li>интерфейсы</li>
+              <li>спецпроекты</li>
+              <li>digital-концепты</li>
+              <li>AI-first сайты и продукты</li>
+            </ul>
+            <p class="about__note">
+              Мой подход — сделать быстро, красиво и не бездумно.
+              Чтобы проект не выглядел как очередной шаблон, собранный без вкуса и идеи.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -218,7 +126,7 @@
     <section id="capabilities" class="section capabilities" aria-labelledby="capabilities-title">
       <div class="container">
         <header class="section__header section__header--center">
-          <div class="section__label reveal" data-reveal="up">04 — Возможности</div>
+          <div class="section__label reveal" data-reveal="up">02 — Что я умею</div>
           <h2 id="capabilities-title" class="section__title reveal" data-reveal="up" data-delay="1">Что я делаю</h2>
         </header>
         <div class="capabilities__grid">
@@ -229,37 +137,95 @@
                 <path d="M4 12h24" stroke="currentColor" stroke-width="1.5"/>
               </svg>
             </div>
-            <h3 class="capability__title">Frontend-архитектура</h3>
-            <p class="capability__desc">Масштабируемые SPA, design systems, performance-first подход.</p>
+            <h3 class="capability__title">Лендинги</h3>
+            <p class="capability__desc">Сайты, которые не просто «есть», а собирают внимание, держат ритм и ведут человека по смыслу.</p>
           </div>
           <div class="capability reveal" data-reveal="tilt" data-delay="2">
+            <div class="capability__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="6" y="4" width="20" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 10h12M10 15h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="capability__title">Портфолио и личные сайты</h3>
+            <p class="capability__desc">Страницы, которые показывают не только работы, но и стиль, характер и уровень.</p>
+          </div>
+          <div class="capability reveal" data-reveal="tilt" data-delay="3">
+            <div class="capability__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 20l6-10 6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="capability__title">Визуальные концепты</h3>
+            <p class="capability__desc">Когда нужен не просто сайт, а ощущение: атмосфера, характер, настроение, подача.</p>
+          </div>
+          <div class="capability reveal" data-reveal="tilt" data-delay="4">
+            <div class="capability__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8 24l4-12 4 8 4-16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="capability__title">AI + Web</h3>
+            <p class="capability__desc">Использую нейросети как инструмент ускорения и усиления идей, а не как замену мышлению.</p>
+          </div>
+          <div class="capability reveal" data-reveal="tilt" data-delay="5">
+            <div class="capability__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M6 10h20M6 16h14M6 22h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="capability__title">UX и структура</h3>
+            <p class="capability__desc">Продумываю, как человек читает, куда смотрит, где теряется и где принимает решение.</p>
+          </div>
+          <div class="capability reveal" data-reveal="tilt" data-delay="6">
             <div class="capability__icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
                 <path d="M16 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3 class="capability__title">Motion Design</h3>
-            <p class="capability__desc">Системы анимаций, микроинтеракции, scroll-driven storytelling.</p>
+            <h3 class="capability__title">Быстрый запуск</h3>
+            <p class="capability__desc">Могу собрать сильную первую версию быстро, без месяцев бесконечных согласований.</p>
           </div>
-          <div class="capability reveal" data-reveal="tilt" data-delay="3">
-            <div class="capability__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M8 24l8-16 8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="capability__title">UI/UX проектирование</h3>
-            <p class="capability__desc">Прототипы, user flows, доступные интерфейсы с WCAG-совместимостью.</p>
-          </div>
-          <div class="capability reveal" data-reveal="tilt" data-delay="4">
-            <div class="capability__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M6 16h20M16 6v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="capability__title">Full-stack интеграция</h3>
-            <p class="capability__desc">API, SSR, CI/CD — от идеи до деплоя без разрывов в процессе.</p>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section philosophy" aria-labelledby="approach-title">
+      <div class="container philosophy__layout">
+        <div class="philosophy__visual reveal" data-reveal="mask" aria-hidden="true">
+          <div class="philosophy__orb philosophy__orb--1"></div>
+          <div class="philosophy__orb philosophy__orb--2"></div>
+          <div class="philosophy__grid-lines"></div>
+        </div>
+        <div class="philosophy__content">
+          <div class="section__label reveal" data-reveal="right">03 — Мой подход</div>
+          <h2 id="approach-title" class="section__title reveal" data-reveal="right" data-delay="1">Как я работаю</h2>
+          <ul class="philosophy__list">
+            <li class="philosophy__item reveal" data-reveal="right" data-delay="2">
+              <span class="philosophy__num">01</span>
+              <div>
+                <h3 class="philosophy__item-title">Сначала вайб</h3>
+                <p>Я смотрю не только на задачу, но и на ощущение, которое должен передавать проект.</p>
+              </div>
+            </li>
+            <li class="philosophy__item reveal" data-reveal="right" data-delay="3">
+              <span class="philosophy__num">02</span>
+              <div>
+                <h3 class="philosophy__item-title">Потом структура</h3>
+                <p>Красивый сайт без логики — это просто красивая обёртка. Поэтому я собираю смысл, сценарий и путь пользователя.</p>
+              </div>
+            </li>
+            <li class="philosophy__item reveal" data-reveal="right" data-delay="4">
+              <span class="philosophy__num">03</span>
+              <div>
+                <h3 class="philosophy__item-title">Потом реализация</h3>
+                <p>Когда есть стиль и логика, проект собирается быстрее, точнее и выглядит сильно.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -268,8 +234,8 @@
     <section id="work" class="section work" aria-labelledby="work-title">
       <div class="container">
         <header class="section__header">
-          <div class="section__label reveal" data-reveal="up">05 — Портфолио</div>
-          <h2 id="work-title" class="section__title reveal" data-reveal="up" data-delay="1">Избранные работы</h2>
+          <div class="section__label reveal" data-reveal="up">04 — Проекты</div>
+          <h2 id="work-title" class="section__title reveal" data-reveal="up" data-delay="1">Избранные проекты</h2>
         </header>
         <div class="work__list">
           <article class="work-item work-item--offset reveal" data-reveal="slide" data-delay="1">
@@ -280,9 +246,9 @@
                 </div>
               </div>
               <div class="work-item__info">
-                <span class="work-item__year">2025</span>
-                <h3 class="work-item__title">Aurora Finance</h3>
-                <p class="work-item__desc">Финтех-платформа с real-time визуализацией портфеля</p>
+                <h3 class="work-item__title">AI Landing Experience</h3>
+                <p class="work-item__desc">Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</p>
+                <p class="work-item__done">Что сделано: структура, тексты, дизайн-концепция, сборка.</p>
                 <span class="work-item__arrow" aria-hidden="true">→</span>
               </div>
             </a>
@@ -295,9 +261,9 @@
                 </div>
               </div>
               <div class="work-item__info">
-                <span class="work-item__year">2024</span>
-                <h3 class="work-item__title">Studio Meridian</h3>
-                <p class="work-item__desc">Сайт креативного агентства с WebGL-переходами</p>
+                <h3 class="work-item__title">Portfolio for Creative Expert</h3>
+                <p class="work-item__desc">Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</p>
+                <p class="work-item__done">Что сделано: позиционирование, подача, визуальный ритм, упаковка работ.</p>
                 <span class="work-item__arrow" aria-hidden="true">→</span>
               </div>
             </a>
@@ -310,13 +276,64 @@
                 </div>
               </div>
               <div class="work-item__info">
-                <span class="work-item__year">2024</span>
-                <h3 class="work-item__title">Echo Health</h3>
-                <p class="work-item__desc">Телемедицинское приложение с focus на accessibility</p>
+                <h3 class="work-item__title">Bot &amp; Funnel Page</h3>
+                <p class="work-item__desc">Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</p>
+                <p class="work-item__done">Что сделано: логика блоков, тексты, CTA, визуальный каркас.</p>
                 <span class="work-item__arrow" aria-hidden="true">→</span>
               </div>
             </a>
           </article>
+          <article class="work-item work-item--reverse reveal" data-reveal="slide" data-delay="4">
+            <a href="#" class="work-item__link">
+              <div class="work-item__visual">
+                <div class="work-item__placeholder" style="--hue: 210">
+                  <span class="work-item__index">04</span>
+                </div>
+              </div>
+              <div class="work-item__info">
+                <h3 class="work-item__title">Concept Site for AI Creator</h3>
+                <p class="work-item__desc">Сайт с упором на трендовую подачу, сильный первый экран и ощущение «это хочется переслать».</p>
+                <p class="work-item__done">Что сделано: creative direction, структура, визуальная концепция.</p>
+                <span class="work-item__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="section why" aria-labelledby="why-title">
+      <div class="container why__container">
+        <div class="section__label reveal" data-reveal="left">05 — Почему со мной</div>
+        <h2 id="why-title" class="why__title reveal" data-reveal="left" data-delay="1">
+          Почему ко мне идут не просто за кодом
+        </h2>
+        <div class="why__grid">
+          <p class="why__lead reveal" data-reveal="left" data-delay="2">
+            Потому что я умею видеть проект целиком.
+          </p>
+          <div class="why__columns reveal" data-reveal="left" data-delay="3">
+            <div class="why__column">
+              <p class="why__column-label">Не только:</p>
+              <ul class="why__list">
+                <li>как это собрать</li>
+              </ul>
+            </div>
+            <div class="why__column">
+              <p class="why__column-label">но и:</p>
+              <ul class="why__list">
+                <li>как это подать</li>
+                <li>как это будет восприниматься</li>
+                <li>где человек зацепится взглядом</li>
+                <li>что запомнит</li>
+                <li>почему это будет выглядеть дороже, чем стоит</li>
+              </ul>
+            </div>
+          </div>
+          <p class="why__formula reveal" data-reveal="left" data-delay="4">
+            Я соединяю: <span>эстетику + структуру + digital-мышление + скорость</span>
+          </p>
         </div>
       </div>
     </section>
@@ -326,133 +343,90 @@
       <div class="container">
         <header class="section__header section__header--center">
           <div class="section__label reveal" data-reveal="up">06 — Стек</div>
-          <h2 id="tech-title" class="section__title reveal" data-reveal="up" data-delay="1">Технологии</h2>
+          <h2 id="tech-title" class="section__title reveal" data-reveal="up" data-delay="1">Инструменты</h2>
         </header>
-        <div class="tech__cloud reveal" data-reveal="up" data-delay="2" role="list" aria-label="Используемые технологии">
-          <span class="tech__item" role="listitem">TypeScript</span>
+        <div class="tech__cloud reveal" data-reveal="up" data-delay="2" role="list" aria-label="Используемые инструменты">
+          <span class="tech__item tech__item--lg" role="listitem">ChatGPT</span>
+          <span class="tech__item" role="listitem">Cursor</span>
+          <span class="tech__item" role="listitem">HTML / CSS / JS</span>
           <span class="tech__item tech__item--lg" role="listitem">React</span>
-          <span class="tech__item" role="listitem">Next.js</span>
-          <span class="tech__item tech__item--sm" role="listitem">Node.js</span>
-          <span class="tech__item tech__item--lg" role="listitem">CSS</span>
-          <span class="tech__item" role="listitem">WebGL</span>
-          <span class="tech__item tech__item--sm" role="listitem">GraphQL</span>
-          <span class="tech__item" role="listitem">Figma</span>
-          <span class="tech__item tech__item--lg" role="listitem">Vite</span>
-          <span class="tech__item" role="listitem">PostgreSQL</span>
-          <span class="tech__item tech__item--sm" role="listitem">Docker</span>
-          <span class="tech__item" role="listitem">Git</span>
+          <span class="tech__item" role="listitem">Tailwind</span>
+          <span class="tech__item" role="listitem">Framer Motion</span>
+          <span class="tech__item tech__item--sm" role="listitem">Figma</span>
+          <span class="tech__item" role="listitem">Tilda / Webflow / custom</span>
+          <span class="tech__item tech__item--sm" role="listitem">Telegram / Bots / AI tools</span>
         </div>
+        <p class="tech__note reveal" data-reveal="up" data-delay="3">
+          Но если честно — главный инструмент не стек, а вкус, насмотренность и умение собирать цельное впечатление.
+        </p>
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-title">
-      <div class="container">
-        <header class="section__header">
-          <div class="section__label reveal" data-reveal="up">07 — Отзывы</div>
-          <h2 id="testimonials-title" class="section__title reveal" data-reveal="up" data-delay="1">
-            Что говорят<br>клиенты
-          </h2>
-          <p class="testimonials__lead reveal" data-reveal="up" data-delay="2">
-            Двигайте курсором — карточки реагируют на движение с эффектом decay.
-          </p>
-        </header>
-        <div class="testimonials__track reveal" data-reveal="up" data-delay="2" role="list" aria-label="Отзывы клиентов">
-          <article class="testimonials__item" role="listitem">
-            <div
-              class="decay-card-mount"
-              data-width="280"
-              data-height="380"
-              data-seed="4"
-              data-base-frequency="0.015"
-              data-num-octaves="5"
-              data-max-displacement="400"
-              data-movement-bound="50"
-              data-image="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='750'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%230e0d0c'/%3E%3Cstop offset='45%25' stop-color='%23c87941'/%3E%3Cstop offset='100%25' stop-color='%231a1410'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='750' fill='url(%23a)'/%3E%3Ccircle cx='480' cy='120' r='200' fill='%23e85d2b' opacity='0.15'/%3E%3C/svg%3E"
-            >
-              <blockquote class="decay-card-text">
-                <p class="decay-card__quote">«Интерфейс ощущается как физический объект — именно то, что мы искали.»</p>
-                <footer>
-                  <cite class="decay-card__author">Анна Ковалёва</cite>
-                  <span class="decay-card__role">CEO, Nebula OS</span>
-                </footer>
-              </blockquote>
-            </div>
-          </article>
-          <article class="testimonials__item testimonials__item--raised" role="listitem">
-            <div
-              class="decay-card-mount"
-              data-width="300"
-              data-height="400"
-              data-seed="7"
-              data-base-frequency="0.012"
-              data-num-octaves="6"
-              data-max-displacement="350"
-              data-movement-bound="45"
-              data-image="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='750'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='20%25' y1='0%25' x2='80%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23161412'/%3E%3Cstop offset='60%25' stop-color='%236b8c7a'/%3E%3Cstop offset='100%25' stop-color='%230e0d0c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='750' fill='url(%23b)'/%3E%3Crect x='40' y='500' width='520' height='4' fill='%23ede8e0' opacity='0.06' transform='rotate(-8 300 502)'/%3E%3C/svg%3E"
-            >
-              <blockquote class="decay-card-text">
-                <p class="decay-card__quote">«Каждая анимация несёт смысл. Проект сдан вовремя и с вниманием к деталям.»</p>
-                <footer>
-                  <cite class="decay-card__author">Михаил Орлов</cite>
-                  <span class="decay-card__role">Product Lead, Pulse Analytics</span>
-                </footer>
-              </blockquote>
-            </div>
-          </article>
-          <article class="testimonials__item" role="listitem">
-            <div
-              class="decay-card-mount"
-              data-width="280"
-              data-height="380"
-              data-seed="11"
-              data-base-frequency="0.018"
-              data-num-octaves="5"
-              data-max-displacement="420"
-              data-movement-bound="55"
-              data-image="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='750'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='0%25' stop-color='%231e1b18'/%3E%3Cstop offset='50%25' stop-color='%23e85d2b'/%3E%3Cstop offset='100%25' stop-color='%230e0d0c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='750' fill='url(%23c)'/%3E%3Cpath d='M0 600 Q300 450 600 650' stroke='%23c87941' stroke-width='2' fill='none' opacity='0.2'/%3E%3C/svg%3E"
-            >
-              <blockquote class="decay-card-text">
-                <p class="decay-card__quote">«Редкий разработчик, который думает как дизайнер. Рекомендую без оговорок.»</p>
-                <footer>
-                  <cite class="decay-card__author">Елена Сафронова</cite>
-                  <span class="decay-card__role">Art Director, Studio Meridian</span>
-                </footer>
-              </blockquote>
-            </div>
-          </article>
-        </div>
+    <!-- AUDIENCE -->
+    <section id="audience" class="section audience" aria-labelledby="audience-title">
+      <div class="container audience__container">
+        <div class="section__label reveal" data-reveal="up">07 — Для кого</div>
+        <h2 id="audience-title" class="section__title reveal" data-reveal="up" data-delay="1">Кому подойдёт моя работа</h2>
+        <ul class="audience__list reveal" data-reveal="up" data-delay="2">
+          <li class="audience__item">экспертам</li>
+          <li class="audience__item">креаторам</li>
+          <li class="audience__item">digital-проектам</li>
+          <li class="audience__item">AI-продуктам</li>
+          <li class="audience__item">студиям</li>
+          <li class="audience__item">тем, кому нужен сайт с характером</li>
+          <li class="audience__item">тем, кто не хочет шаблонную безликую страницу</li>
+        </ul>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- MANIFESTO QUOTE -->
+    <section id="manifesto" class="section manifesto manifesto--quote" aria-labelledby="manifesto-title">
+      <div class="section-cut section-cut--manifesto" aria-hidden="true"></div>
+      <p class="manifesto__watermark" aria-hidden="true">ЖИВОЙ</p>
+      <div class="container manifesto__container manifesto__container--quote">
+        <h2 id="manifesto-title" class="manifesto__title manifesto__title--quote reveal" data-reveal="left" data-delay="1">
+          <span class="manifesto__word">Хороший сайт —</span>
+          <span class="manifesto__word">это не когда</span>
+          <span class="manifesto__word manifesto__word--accent">«нормально сверстано».</span>
+          <span class="manifesto__word">Это когда у проекта</span>
+          <span class="manifesto__word">появляется энергия,</span>
+          <span class="manifesto__word">форма и ощущение,</span>
+          <span class="manifesto__word">что он живой.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
     <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="container contact__layout">
         <div class="contact__intro">
           <div class="section__label reveal" data-reveal="left">08 — Контакт</div>
           <h2 id="contact-title" class="section__title reveal" data-reveal="left" data-delay="1">
-            Давайте создадим<br>что-то значимое
+            Если тебе нужен сайт, который выглядит сильно и ощущается современно — давай соберём
           </h2>
           <p class="contact__text reveal" data-reveal="left" data-delay="2">
-            Открыт к проектам, коллаборациям и разговорам о том,
-            как сделать цифровой опыт лучше.
+            Могу помочь с концепцией, структурой, упаковкой и реализацией.
+            От первого вайба до готовой страницы.
           </p>
+          <div class="contact__cta reveal" data-reveal="left" data-delay="3">
+            <a href="https://t.me/yourname" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Написать мне</a>
+            <a href="#work" class="btn btn--ghost">Посмотреть работы</a>
+          </div>
         </div>
-        <form class="contact__form reveal" data-reveal="right" data-delay="2" action="#" method="post">
-          <div class="input-group">
-            <label for="name" class="input-label">Имя</label>
-            <input type="text" id="name" name="name" class="input" placeholder="Как к вам обращаться" required autocomplete="name">
-          </div>
-          <div class="input-group">
-            <label for="email" class="input-label">Email</label>
-            <input type="email" id="email" name="email" class="input" placeholder="you@example.com" required autocomplete="email">
-          </div>
-          <div class="input-group">
-            <label for="message" class="input-label">Сообщение</label>
-            <textarea id="message" name="message" class="input input--textarea" placeholder="Расскажите о проекте..." rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Отправить</button>
-        </form>
+        <div class="contact__details reveal" data-reveal="right" data-delay="2">
+          <h3 class="contact__details-title">Контакты</h3>
+          <ul class="contact__links">
+            <li><a href="https://t.me/yourname" target="_blank" rel="noopener noreferrer">Telegram: @yourname</a></li>
+            <li><a href="mailto:hello@yourmail.com">Email: hello@yourmail.com</a></li>
+          </ul>
+          <nav class="contact__social" aria-label="Социальные сети">
+            <a href="#" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Notion</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </nav>
+        </div>
       </div>
     </section>
   </main>
@@ -461,19 +435,17 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <span class="logo logo--footer">IC</span>
-        <p class="footer__tagline">Crafted with intention</p>
+        <p class="footer__tagline">Vibe Coder · Web &amp; AI Experiences</p>
       </div>
       <nav class="footer__nav" aria-label="Ссылки в подвале">
+        <a href="https://t.me/yourname" class="footer__link" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="mailto:hello@yourmail.com" class="footer__link">Email</a>
         <a href="https://github.com" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://t.me" class="footer__link" target="_blank" rel="noopener noreferrer">Telegram</a>
-        <a href="mailto:hello@example.com" class="footer__link">Email</a>
       </nav>
       <p class="footer__copy">&copy; 2026 Игорь. Все права защищены.</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="DecayCard.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
